@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site em Manutenção - Kings Marketing Digital</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+
+            /* 🔵 FUNDO GRADIENTE MODERNO */
+            background: linear-gradient(135deg, #0f1e46 0%, #0c327c 40%, #0a4dba 70%, #0e76ff 100%);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .container {
+            max-width: 480px;
+            background: rgba(255, 255, 255, 0.10);
+            padding: 40px 30px;
+            border-radius: 18px;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+            animation: fadeIn .7s ease-out;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .logo {
+            width: 160px;
+            margin: 0 auto 25px;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 12px;
+        }
+
+        p {
+            font-size: 15px;
+            font-weight: 300;
+            margin-bottom: 20px;
+            line-height: 1.5;
+            color: #e3e3e3;
+        }
+
+        .btn-whatsapp {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: #25D366;
+            color: white;
+            padding: 14px 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            transition: .25s ease-in-out;
+        }
+
+        .btn-whatsapp:hover {
+            background: #1eb954;
+            transform: translateY(-2px) scale(1.03);
+        }
+
+        .btn-whatsapp img {
+            width: 20px;
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 20px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- LOGO -->
+        <img src="Logo kings Branco.png" class="logo" alt="Kings Marketing Digital">
+
+        <h1>Estamos construindo algo incrível para você!</h1>
+
+        <p>Este site está em manutenção e em breve estará no ar com uma nova versão.</p>
+
+        <p>Se você precisar de atendimento, nossa equipe está disponível no WhatsApp.</p>
+
+        <!-- BOTÃO DO WHATSAPP -->
+        <a class="btn-whatsapp" 
+           href="https://wa.me/5511934114013?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20os%20servi%C3%A7os." 
+           target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="">
+            Falar no WhatsApp
+        </a>
+    </div>
+
+</body>
+</html>
